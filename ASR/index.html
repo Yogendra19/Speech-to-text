@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Audio Prediction</h2>
+        <form id="upload-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="audio-file">Upload .wav File:</label>
+                <input type="file" id="audio-file" name="audio-file" accept=".wav" required>
+            </div>
+            <button type="button" class="btn" onclick="predict()">Predict</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
